@@ -12,7 +12,30 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.popular-contenido .popular-titulo{
+  font-family: "Work Sans", Helvetica, sans-serif;/*EL TIPO DE LETRA QUE ME ENCANTO*/
+  color: rgb(232, 185, 53);
+  
+}
+.popular-contenido .popular-imagen{
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+.popular{
+  font-family: "Work Sans", Helvetica, sans-serif;
+}
+.popular .popular-principal{
+  /*text-align: center; PARA CENTRAR TEXTO*/
+  padding-left: 15px;
 
+}
+.popular-contenido{
+  padding: 20px;
+  display: inline-block;/*PARA ALINEAR LAS IMAGENES RESPONSIVIMENTE*/
+  color:pink;
+   
+}
 a {
   font-weight: 500;
   color: #646cff;
