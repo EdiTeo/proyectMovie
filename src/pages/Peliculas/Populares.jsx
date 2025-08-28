@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from "react";
-import { getPopularMovies } from "../services/movies";
-import '../index.css';
+import { getPopularMovies } from "../../services/movies";
+import './Populares.css';
 export function PelisPopulares(){
 
   const [movies, setMovies] = useState([]);
@@ -12,7 +12,7 @@ export function PelisPopulares(){
   return(
     <div className="popular">
       <h1 className="popular-principal">Peliculas Populares</h1>
-      <div> {/**Se observa un operador ternario yes:no */}
+      <div>  
         {movies.length === 0 ? (
           <p>Cargando...</p>
         ) : (

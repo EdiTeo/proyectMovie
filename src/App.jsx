@@ -1,16 +1,23 @@
 
-import { PelisPopulares } from "./polulares/Populares";
-import { Menu } from "./componente/menu";
-//import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-//const Home = () => <h2 className="text-center mt-10 text-2xl">Bienvenido a MovisTeo</h2>;
-
+import { PelisPopulares } from "./pages/Peliculas/Populares";
+import { Menu } from "./componente/Menu";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {Generos} from './pages/Generos/Generos'
+import { Peliculas } from "./pages/Peliculas/Peliculas";
+import { Inicio } from "./pages/Inicio/Inicio";
+import {Series} from "./pages/Series/Series"
 export default function App(){
   return (
-    <>
+    <Router>
       <Menu />
-      <PelisPopulares/>
-    </>
+      <Routes>
+        <Route path="/" element={<Inicio/>}/>
+        <Route path="/generos" element={<Generos/>}/>
+        <Route path="/peliculas" element={< Peliculas/>}/>
+        <Route path="/series" element={<Series/>}/>
+        
+      </Routes>
+    </Router>
 
   );
 }

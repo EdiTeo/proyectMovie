@@ -1,0 +1,19 @@
+.popular-contenido .popular-titulo{
+  color: rgb(232, 185, 53);
+}
+.popular-contenido .popular-imagen{
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+.popular .popular-principal{
+  padding-left: 15px;
+
+}
+.popular-contenido{
+  padding: 20px;
+  display: inline-block;
+  color:pink;
+   
+}
+ 
