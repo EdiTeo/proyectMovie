@@ -1,0 +1,27 @@
+.nav-principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #141A32;
+  color: white;
+}
+.contenido-nav{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2rem;/*1rem=16px */
+}
+.logo .titulo-principal {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.titulo-principal{
+    cursor: pointer;
+}
+.lista:hover{
+    transform: scale(150%);
+    color:blueviolet;
+    cursor: pointer;
+}

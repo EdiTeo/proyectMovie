@@ -1,18 +1,35 @@
+import '../style/Menu.css'
+import {Link} from 'react-router-dom'
 export function  Menu(){
+    const navigation = [
+        {name:'Inicio',href:'/'},
+        {name:'Películas',href:'/peliculas'},
+        {name:'Series',href:'/series'},
+        {name:'Géneros',href:'/generos'},
+    ]
     return(
-            <>
-                <nav className="bg-gray-900 text-white p-4">
-                    <div className="container mx-auto flex justify-between">
-                        <h1 className="text-xl font-bold">MoviTeo</h1>
-                        <ul className="flex gap-4">
-                            <li> Inicio </li>
-                            <li>Peliculas</li>
-                            <li>Series</li>
-                            <li>Generos</li>
-                        </ul>
+            <header>
+                <nav className="nav-principal">
+                    <div className="logo">
+                          <Link to="/" className="titulo-principal">MoviTeo</Link>
                     </div>
-
+                       <div className="direccion-lista"> 
+                        <div className="contenido-nav">
+                            {navigation.map(
+                                (item)=>(
+                                    <Link
+                                        key={item.name}
+                                        to={item.href}
+                                        className="lista"
+                                    >
+                                    {item.name}
+                                    </Link>
+                                )
+                            )}
+                        </div>
+                       </div>
+                    
                 </nav>
-            </>
+            </header>
     );
 }
