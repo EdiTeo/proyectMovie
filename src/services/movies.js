@@ -6,3 +6,8 @@ export async function getPopularMovies(){
     const resultado = await axios.get(`${BASE_URL}/movie/popular?api_key=${API_KEY}&language=es-ES`);
     return resultado.data.results;
 }
+//Series populares
+export async function getSeriesPopulares(){
+    const resultado = await axios.get(`${BASE_URL}/tv/popular?api_key=${API_KEY}&language=es-ES&page=1`);
+    return resultado.data.results;
+}
