@@ -11,7 +11,7 @@ export function Series(){
     )
     return(
         <div className="series">
-            <h1>Series Populares</h1>
+            <h1 className="titulo-principal-serie">Series Populares</h1>
             {
                 series.length===0?(
                     <p>Esta cargando...</p>
