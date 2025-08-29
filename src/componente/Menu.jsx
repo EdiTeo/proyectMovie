@@ -14,19 +14,24 @@ export function  Menu(){
                           <Link to="/" className="titulo-principal">MoviTeo</Link>
                     </div>
                        <div className="direccion-lista"> 
-                        <div className="contenido-nav">
-                            {navigation.map(
-                                (item)=>(
-                                    <Link
-                                        key={item.name}
-                                        to={item.href}
-                                        className="lista"
-                                    >
-                                    {item.name}
-                                    </Link>
-                                )
-                            )}
-                        </div>
+                            <div className="contenido-nav">
+                                {navigation.map(
+                                    (item)=>(
+                                        <Link
+                                            key={item.name}
+                                            to={item.href}
+                                            className="lista"
+                                        >
+                                        {item.name}
+                                        </Link>
+                                    )
+                                )}
+                            </div>
+                            <div className="iniciarsesion">
+                                <button className="iniciar-sesion">
+                                    Iniciar Sesión
+                                </button>
+                            </div>
                        </div>
                     
                 </nav>
