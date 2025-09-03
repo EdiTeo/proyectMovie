@@ -30,11 +30,12 @@
 .iniciar-sesion{
   border: none;
   background-color: rgba(56, 189, 248, 0.4);
+  &:hover{
+    transform: scale(1.3);
+    background-color: #9ba1fb;
+  }
 }
-.iniciar-sesion:hover{
-  transform: scale(1.3);
-  background-color: #9ba1fb;
-}
+ 
 .lista:hover{
     transform: scale(150%);
     color:blueviolet;
