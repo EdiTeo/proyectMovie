@@ -28,9 +28,9 @@ export function  Menu(){
                                 )}
                             </div>
                             <div className="iniciarsesion">
-                                <button className="iniciar-sesion">
+                                <Link to="/registro" className="iniciar-sesion">
                                     Iniciar Sesión
-                                </button>
+                                </Link>
                             </div>
                        </div>
                     
